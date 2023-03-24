@@ -23,6 +23,8 @@ To make my version of the Theme Park Queue Display, i used the following items. 
 + Stop displaying ride queue times when the park is shut and instead display "{park name} is now closed"
 + Give the option to display the weather on the display onces its cycled through the queue times (This will be optional)
 + Show the park opening hours to the left of the clock 
++ When disconnected from WIFI - to display a message "Device is disconnected from WIFI"
++ Implement an Energy Saving mode that stops calling the API during the night or after park opening hours
 
 # Report a bug 
 
