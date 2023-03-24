@@ -25,6 +25,11 @@ To make my version of the Theme Park Queue Display, i used the following items. 
 + Show the park opening hours to the left of the clock 
 + When disconnected from WIFI - to display a message "Device is disconnected from WIFI"
 + Implement an Energy Saving mode that stops calling the API during the night or after park opening hours
++ Add animations instead of the display blinking
+
+Futher down the road:
+ 
++ Add a web interface, allowing users to customise the park shown and the type of rides (Family / thrill / area based). The interface would also allow customisation on font type / size and also allow the user to select when eco mode starts. 
 
 # Report a bug 
 
