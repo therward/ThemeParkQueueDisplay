@@ -1,0 +1,12 @@
+Project created by Thomas Herward - therward on GitHub
+All rights are reserved (C) 2023.
+
+Contact me on twitter @thomasherward
+
+Queue time API provided by Queue-Times.com - https://queue-times.com
+
+
+Project Description:
+This project displays the live queue times for a theme park of your choice including the time in the corner making it an exciting desktop clock. 
+Project uses Python 3 - please ensure you have this installed as the project is not compatible with any other version. 
+
