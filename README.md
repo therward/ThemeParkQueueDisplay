@@ -17,6 +17,13 @@ To make my version of the Theme Park Queue Display, i used the following items. 
 # Video Demo
 
 
+
+# Upcoming Features
+
++ Stop displaying ride queue times when the park is shut and instead display "{park name} is now closed"
++ Give the option to display the weather on the display onces its cycled through the queue times (This will be optional)
++ Show the park opening hours to the left of the clock 
+
 # Report a bug 
 
 If there is an bug you have spotted, please create a GitHub issue and i will try to include a fix on the next version. Please note i am unable to
