@@ -17,9 +17,9 @@ serial = spi(device=0, port=0, bus_speed_hz=8000000)
 device = ssd1322(serial, rotate=0, width=256, height=64)
 
 # Load font file
-font_path = "%s/resources/Bold.ttf"
+font_path = "%s/font/Bold.ttf"
 font_size = 10
-font = ImageFont.truetype("%s/font/Bold.ttf" % (os.path.dirname(os.path.abspath(inspect.getfile(inspect.currentframe())))), 10)
+font = ImageFont.truetype("%s/font/Bold.ttf" % (os.path.dirname(os.path.abspath(inspect.getfile(inspect.currentframe())))), 12)
 
 # URL to request queue times for the theme park. Change the number in the URL to change the theme park. Please note that this won't change the titles
 # here are some quick access park numbers. More can be found at https://queue-times.com/parks
@@ -48,9 +48,9 @@ draw = ImageDraw.Draw(img)
 title_text = "Alton Towers Queue Display - Version 1.8"
 loading_text = "NOW LOADING"
 created_by_text = " Created By Thomas Herward"
-title_font = ImageFont.truetype("%s/resources/Bold.ttf" % (os.path.dirname(os.path.abspath(inspect.getfile(inspect.currentframe())))), 14)
-loading_font = ImageFont.truetype("%s/resources/Bold.ttf" % (os.path.dirname(os.path.abspath(inspect.getfile(inspect.currentframe())))), 12)
-created_by_font = ImageFont.truetype("%s/resources/Bold.ttf" % (os.path.dirname(os.path.abspath(inspect.getfile(inspect.currentframe())))), 12)
+title_font = ImageFont.truetype("%s/font/Bold.ttf" % (os.path.dirname(os.path.abspath(inspect.getfile(inspect.currentframe())))), 14)
+loading_font = ImageFont.truetype("%s/font/Bold.ttf" % (os.path.dirname(os.path.abspath(inspect.getfile(inspect.currentframe())))), 12)
+created_by_font = ImageFont.truetype("%s/font/Bold.ttf" % (os.path.dirname(os.path.abspath(inspect.getfile(inspect.currentframe())))), 12)
 title_width, title_height = draw.textsize(title_text, font=title_font)
 loading_width, loading_height = draw.textsize(loading_text, font=loading_font)
 created_by_width, created_by_height = draw.textsize(created_by_text, font=loading_font)
