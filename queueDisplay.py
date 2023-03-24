@@ -19,7 +19,7 @@ device = ssd1322(serial, rotate=0, width=256, height=64)
 # Load font file
 font_path = "%s/resources/Bold.ttf"
 font_size = 10
-font = ImageFont.truetype("%s/resources/Bold.ttf" % (os.path.dirname(os.path.abspath(inspect.getfile(inspect.currentframe())))), 10)
+font = ImageFont.truetype("%s/font/Bold.ttf" % (os.path.dirname(os.path.abspath(inspect.getfile(inspect.currentframe())))), 10)
 
 # URL to request queue times for the theme park. Change the number in the URL to change the theme park. Please note that this won't change the titles
 # here are some quick access park numbers. More can be found at https://queue-times.com/parks
@@ -42,20 +42,23 @@ font = ImageFont.truetype("%s/resources/Bold.ttf" % (os.path.dirname(os.path.abs
 
 url = "https://queue-times.com/parks/1/queue_times.json"
 
-
 # Display startup screen
 img = Image.new("RGB", (256, 64), "black")
 draw = ImageDraw.Draw(img)
-title_text = "Alton Towers Queue Display -  Version 1.8"
+title_text = "Alton Towers Queue Display - Version 1.8"
 loading_text = "NOW LOADING"
+created_by_text = " Created By Thomas Herward"
 title_font = ImageFont.truetype("%s/resources/Bold.ttf" % (os.path.dirname(os.path.abspath(inspect.getfile(inspect.currentframe())))), 14)
-loading_font = ImageFont.truetype("%s/resources/Bold.ttf" % (os.path.dirname(os.path.abspath(inspect.getfile(inspect.currentframe())))), 10)
+loading_font = ImageFont.truetype("%s/resources/Bold.ttf" % (os.path.dirname(os.path.abspath(inspect.getfile(inspect.currentframe())))), 12)
+created_by_font = ImageFont.truetype("%s/resources/Bold.ttf" % (os.path.dirname(os.path.abspath(inspect.getfile(inspect.currentframe())))), 12)
 title_width, title_height = draw.textsize(title_text, font=title_font)
 loading_width, loading_height = draw.textsize(loading_text, font=loading_font)
-draw.text(((256 - title_width) / 2, (64 - title_height - loading_height) / 2), title_text, fill="white", font=title_font)
-draw.text(((256 - loading_width) / 2, (64 - title_height - loading_height) / 2 + title_height), loading_text, fill="white", font=loading_font)
+created_by_width, created_by_height = draw.textsize(created_by_text, font=loading_font)
+draw.text(((256 - title_width) / 2, (64 - title_height - loading_height - created_by_height) / 2), title_text, fill="white", font=title_font)
+draw.text(((256 - loading_width) / 2, (64 - title_height - loading_height - created_by_height) / 2 + title_height), loading_text, fill="white", font=loading_font)
+draw.text(((256 - created_by_width) / 2, (64 - title_height - loading_height - created_by_height) / 2 + title_height + loading_height + 10), created_by_text, fill="white", font=created_by_font)
 device.display(img)
-time.sleep(5)
+time.sleep(12)
 
 # Loop until function is closed
 while True:
