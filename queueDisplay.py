@@ -18,7 +18,7 @@ device = ssd1322(serial, rotate=0, width=256, height=64)
 
 # Load font file
 font_path = "%s/font/Bold.ttf"
-font_size = 10
+font_size = 12
 font = ImageFont.truetype("%s/font/Bold.ttf" % (os.path.dirname(os.path.abspath(inspect.getfile(inspect.currentframe())))), 12)
 
 # URL to request queue times for the theme park. Change the number in the URL to change the theme park. Please note that this won't change the titles
