@@ -26,6 +26,7 @@ To make my version of the Theme Park Queue Display, i used the following items. 
 + When disconnected from WIFI - to display a message "Device is disconnected from WIFI"
 + Implement an Energy Saving mode that stops calling the API during the night or after park opening hours
 + Add animations instead of the display blinking
++ Auto Update
 
 Futher down the road:
  
