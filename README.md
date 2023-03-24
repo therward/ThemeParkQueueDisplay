@@ -16,7 +16,7 @@ To make my version of the Theme Park Queue Display, i used the following items. 
 
 # Video Demo
 
-[![ img_tag](https://www.youtube.com/watch?v=czwCQ_4MPFk))
+(https://www.youtube.com/watch?v=czwCQ_4MPFk)
 
 # Upcoming Features
 
